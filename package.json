@@ -1,17 +1,50 @@
 {
-  "name": "clqestracker",
-  "version": "8.9.4",
-  "private": true,
-  "homepage": "https://glenmaroney.github.io/clqestracker",
+  "name": "rcr",
+  "version": "0.1.0",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "private": false,
   "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "@sendgrid/mail": "^6.2.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "chart.js": "^2.7.2",
+    "chartjs-plugin-datalabels": "^0.3.0",
+    "core-js": "^2.5.5",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "moment": "^2.22.0",
+    "mssql": "^4.1.0",
+    "nodemailer": "^4.6.4",
+    "rand-token": "^0.4.0",
+    "reachmailapi": "^0.2.4",
+    "react": "^16.3.1",
+    "react-chartjs-2": "^2.7.0",
+    "react-datepicker": "^1.4.1",
+    "react-dom": "^16.3.1",
+    "react-pivottable": "^0.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-table": "^6.8.0",
+    "redux": "^3.7.2",
+    "redux-persist": "^5.9.1",
+    "redux-promise-middleware": "^5.0.0",
+    "semantic-ui-react": "^0.79.1",
+    "sweetalert": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node iisConfig/copyIISConfig.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "server/index.js",
+  "proxy": "http://localhost:443"
 }

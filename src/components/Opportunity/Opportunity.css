@@ -1,0 +1,19 @@
+.table {
+    margin-top: 30px;
+}
+
+.modal {
+    text-align: right;
+}
+
+.actions{
+    display: flex;
+}
+
+.buttonHeader{
+    display: flex;
+}
+
+.btn {
+    margin-right: 5px;
+}
